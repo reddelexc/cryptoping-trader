@@ -1,0 +1,17 @@
+# Telegram session
+*.session
+
+# PyCharm files
+.idea/
+
+# Virtual environment
+venv/
+
+# Trained model data
+trained_model/
+
+# Trader dumps needed for restoring
+trader_dumps/
+
+# Dataset and trader results data
+data/

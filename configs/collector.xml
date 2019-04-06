@@ -1,0 +1,42 @@
+<collector>
+    <cryptoping_session></cryptoping_session>
+    <cryptoping_session_name>_frontend_session</cryptoping_session_name>
+    <cryptoping_url>https://cryptoping.tech/backend/notifications?page=</cryptoping_url>
+    <dataset_size></dataset_size>
+    <last_signal_id></last_signal_id>
+    <signal_exceptions>
+        <exception>2017-08-31 05:11:43</exception>
+        <exception>2017-08-31 00:36:19</exception>
+        <exception>2017-08-31 00:20:17</exception>
+        <exception>2017-08-30 22:54:08</exception>
+        <exception>2017-08-30 22:36:28</exception>
+        <exception>2017-08-30 22:30:57</exception>
+        <exception>2017-08-30 21:51:23</exception>
+        <exception>2017-08-30 21:22:08</exception>
+        <exception>2017-08-30 21:16:50</exception>
+        <exception>2017-08-30 21:15:48</exception>
+        <exception>2017-08-30 20:31:15</exception>
+        <exception>2017-08-30 20:14:17</exception>
+        <exception>2017-08-30 19:11:49</exception>
+        <exception>2017-08-30 19:08:58</exception>
+        <exception>2017-08-30 18:48:45</exception>
+        <exception>2017-08-30 18:16:33</exception>
+        <exception>2017-08-30 18:12:11</exception>
+        <exception>2017-08-30 18:05:18</exception>
+        <exception>2017-08-30 17:35:22</exception>
+        <exception>2017-08-30 17:21:37</exception>
+        <exception>2017-08-30 17:13:29</exception>
+        <exception>2017-08-30 17:05:17</exception>
+        <exception>2017-08-30 17:04:14</exception>
+        <exception>2017-08-30 16:47:43</exception>
+        <exception>2017-08-30 16:44:27</exception>
+        <exception>2017-08-30 16:39:05</exception>
+        <exception>2017-08-30 16:36:46</exception>
+        <exception>2017-08-30 16:29:34</exception>
+        <exception>2017-08-30 16:26:08</exception>
+        <exception>2017-08-13 14:54:19</exception>
+        <exception>2017-08-13 14:39:58</exception>
+        <exception>2018-07-29 13:11:04</exception>
+        <exception>2018-10-26 19:36:54</exception>
+    </signal_exceptions>
+</collector>

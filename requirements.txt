@@ -1,0 +1,8 @@
+python-telegram-bot
+PySocks
+Telethon-sync
+requests
+pandas
+numpy
+scikit-learn
+ccxt
