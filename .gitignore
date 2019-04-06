@@ -1,6 +1,3 @@
-# Telegram session
-*.session
-
 # PyCharm files
 .idea/
 
@@ -13,5 +10,5 @@ trained_model/
 # Trader dumps needed for restoring
 trader_dumps/
 
-# Dataset and trader results data
+# Dataset, trader results data, Telegram session
 data/
