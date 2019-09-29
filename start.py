@@ -22,9 +22,9 @@ if __name__ == '__main__':
     garbage_cleaning_thread.setDaemon(True)
     garbage_cleaning_thread.start()
 
-    pupil_learn_thread = PredictorLearnThread(pool['predictor'], pool['client'], pool['bot'])
-    pupil_learn_thread.setDaemon(True)
-    pupil_learn_thread.start()
+    predictor_learn_thread = PredictorLearnThread(pool['predictor'], pool['client'], pool['bot'])
+    predictor_learn_thread.setDaemon(True)
+    predictor_learn_thread.start()
 
     trader_thread_cleaner = TraderThreadCleaner(pool['trader'], pool['bot'])
     trader_thread_cleaner.setDaemon(True)
