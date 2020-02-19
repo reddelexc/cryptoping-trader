@@ -58,10 +58,6 @@ class Trader(PoolObject):
             'apiKey': self.meta['YoBit']['public'],
             'secret': self.meta['YoBit']['secret'],
         })
-        self.exchanges['Cryptopia'] = ccxt.cryptopia({
-            'apiKey': self.meta['Cryptopia']['public'],
-            'secret': self.meta['Cryptopia']['secret'],
-        })
         self.exchanges['HitBTC'] = ccxt.hitbtc2({
             'apiKey': self.meta['HitBTC']['public'],
             'secret': self.meta['HitBTC']['secret'],
@@ -235,6 +231,7 @@ class TraderThread(Thread):
 
     def place_order(self, side, quantity, price):
         exception = None
+        order = None
         while True:
             if self.report['tries_to_call_api'] > max_tries_to_call_api:
                 self.bot.send(['Number of attempts to place {0} order exceeded: {1}'.format(side, str(exception))])
@@ -495,7 +492,7 @@ class TraderThread(Thread):
                 self.scribe.trade(self.report)
             self.trader.remove_thread_dump(self.report)
         except Exception as exc:
-                self.bot.send(['Something wrong happened:', form_traceback(exc)])
+            self.bot.send(['Something wrong happened:', form_traceback(exc)])
 
 
 class TraderThreadCleaner(Thread):

@@ -1,8 +1,9 @@
 python-telegram-bot
 PySocks
-Telethon-sync
+Telethon==0.19.1.6
 requests
 pandas
 numpy
 scikit-learn
 ccxt
+joblib

@@ -10,14 +10,14 @@ from .constants import data, client_tg_session, proxy_host, proxy_port, tg_clien
 
 
 class Client(TelegramClient, PoolObject):
-    def __init__(self, proxy=False):
+    def __init__(self, use_proxy=False):
         PoolObject.__init__(self)
 
         self.meta = self.parse_xml()
         self.listener_status = False
         if not os.path.exists(data):
             os.makedirs(data)
-        if proxy:
+        if use_proxy:
             super().__init__(
                 client_tg_session,
                 self.meta['api_id'],

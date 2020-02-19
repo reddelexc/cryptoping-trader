@@ -4,11 +4,5 @@
 # Virtual environment
 venv/
 
-# Trained model data
-trained_model/
-
-# Trader dumps needed for restoring
-trader_dumps/
-
-# Dataset, trader results data, Telegram session
+# Generic stuff
 data/

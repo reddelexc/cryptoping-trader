@@ -9,11 +9,11 @@ tg_client_config = 'configs/tg_client.xml'
 data = 'data/'
 client_tg_session = 'data/tg_client'
 predictor_dataset = 'data/dataset.csv'
-scribe_ignored_signals = 'data/ignored_signals .csv'
-scribe_approved_signals = 'data/approved_signals.csv'
-scribe_finished_trades = 'data/finished_trades.csv'
-trained_model = 'trained_model/'
-trader_dumps = 'trader_dumps/'
+scribe_ignored_signals = 'data/scribe_ignored.csv'
+scribe_approved_signals = 'data/scribe_approved.csv'
+scribe_finished_trades = 'data/scribe_trades.csv'
+trained_model = 'data/trained_model/'
+trader_dumps = 'data/trader_dumps/'
 
 predictor_target_col = '24h_per'
 
@@ -35,11 +35,13 @@ predictor_dummy_cols = [
 ]
 
 allowed_exchanges = [
+    'Poloniex'
+    # 'Bittrex',
     'YoBit',
-    'Cryptopia',
-    'Bittrex',
     'HitBTC',
-    'Binance'
+    'Binance',
+    'Bitfinex'
+    # 'Tidex'
 ]
 
 necessary_exchange_methods = [

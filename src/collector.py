@@ -240,11 +240,14 @@ class Collector(PoolObject):
                         prev_date = cur_date
                         time.sleep(0.1)
                     samples_to_complete[i]['bpi'] = cur_bpi
-
+                    # print('fulfilled at index', i, ': ', str(samples_to_complete[i]))
                     i += 1
                     if i == len(samples_to_complete):
                         not_completed = False
                         break
+                else:
+                    # print('stumbled at index ', i, ': ', str(samples_to_complete[i]))
+                    pass
                 j += 1
             time.sleep(1)
         columns = recent_samples[0].keys()

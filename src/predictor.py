@@ -1,12 +1,12 @@
 import os
 import gc
 import time
+import joblib
 import pandas as pd
 import numpy as np
 
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error, median_absolute_error
-from sklearn.externals import joblib
 from datetime import datetime
 from threading import RLock, Thread
 

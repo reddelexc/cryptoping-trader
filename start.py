@@ -5,10 +5,10 @@ from src import Bot, Client, Collector, \
     Trader, TraderThreadCleaner, GarbageCleanerThread
 
 if __name__ == '__main__':
-    with_proxy = len(sys.argv) > 1 and sys.argv[1] == '-p'
+    use_proxy = len(sys.argv) > 1 and sys.argv[1] == '-p'
     pool = {
-        'client': Client(with_proxy),
-        'bot': Bot(with_proxy),
+        'client': Client(use_proxy),
+        'bot': Bot(use_proxy),
         'collector': Collector(),
         'predictor': Predictor(),
         'scribe': Scribe(),

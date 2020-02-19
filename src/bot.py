@@ -6,13 +6,14 @@ from .constants import proxy_host, proxy_port, tg_bot_config
 
 
 class Bot(PoolObject):
-    def __init__(self, proxy=False):
+    def __init__(self, use_proxy=False):
         PoolObject.__init__(self)
 
         self.meta = self.parse_xml()
-        if proxy:
+        if use_proxy:
             self.updater = Updater(
                 self.meta['bot_token'],
+                use_context=False,
                 request_kwargs={'proxy_url': 'socks5://{0}:{1}'.format(proxy_host, proxy_port)}
             )
         else:
