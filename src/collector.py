@@ -250,7 +250,7 @@ class Collector(PoolObject):
                     pass
                 j += 1
             time.sleep(1)
-        columns = recent_samples[0].keys()
+        columns = completed_samples[0].keys()
         with open(predictor_dataset, 'w', newline='', encoding='utf-8') as file:
             writer = csv.DictWriter(file, fieldnames=columns)
             writer.writeheader()

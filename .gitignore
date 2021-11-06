@@ -6,3 +6,7 @@ venv/
 
 # Generic stuff
 data/
+
+# ML stuff
+*.ipynb
+*.docx
