@@ -15,11 +15,6 @@
         <secret></secret>
     </key>
     <key>
-        <exchange>Cryptopia</exchange>
-        <public></public>
-        <secret></secret>
-    </key>
-    <key>
         <exchange>HitBTC</exchange>
         <public></public>
         <secret></secret>
