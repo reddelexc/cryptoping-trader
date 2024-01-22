@@ -1,3 +1,5 @@
+NOTICE: The CryptoPing company seems to be closed so this project is no longer relevant
+
 Trading system for altcoins which is able to:
 
 - Collect signals from [CryptoPing](https://cryptoping.tech) Telegram bot
